@@ -21,14 +21,14 @@ function Equations() {
     const number = Number(value);
 
     if (value.trim() === "" || !Number.isFinite(number)) {
-      setError("Shkruaj një vlerë numerike të vlefshme.");
+      setError("Shkruaj nje vlere numerike te vlefshme.");
       setResults(null);
       return;
     }
 
     if ((type === "sin" || type === "cos") &&
         (number < -1 || number > 1)) {
-      setError("Për sin dhe cos, vlera duhet të jetë ndërmjet -1 dhe 1.");
+      setError("Per sin dhe cos, vlera duhet te jete ndermjet -1 dhe 1.");
       setResults(null);
       return;
     }
@@ -43,8 +43,8 @@ function Equations() {
 
       general = "x = a + 2kp ose x = p - a + 2kp";
       solutions = [
-        { label: "Zgjidhja e parë", radians: first },
-        { label: "Zgjidhja e dytë", radians: second }
+        { label: "Zgjidhja e pare", radians: first },
+        { label: "Zgjidhja e dyte", radians: second }
       ];
     }
 
@@ -53,10 +53,10 @@ function Equations() {
       const first = normalizeAngle(alpha);
       const second = normalizeAngle(-alpha);
 
-      general = "x = ±a + 2kp";
+      general = "x = ea + 2kp";
       solutions = [
-        { label: "Zgjidhja e parë", radians: first },
-        { label: "Zgjidhja e dytë", radians: second }
+        { label: "Zgjidhja e pare", radians: first },
+        { label: "Zgjidhja e dyte", radians: second }
       ];
     }
 
@@ -66,8 +66,8 @@ function Equations() {
 
       general = "x = a + kp";
       solutions = [
-        { label: "Zgjidhja në [0, 2p)", radians: first },
-        { label: "Zgjidhja tjetër", radians: normalizeAngle(first + Math.PI) }
+        { label: "Zgjidhja ne [0, 2p)", radians: first },
+        { label: "Zgjidhja tjeter", radians: normalizeAngle(first + Math.PI) }
       ];
     }
 
@@ -75,8 +75,8 @@ function Equations() {
       if (number === 0) {
         general = "x = p/2 + kp";
         solutions = [
-          { label: "Zgjidhja e parë", radians: Math.PI / 2 },
-          { label: "Zgjidhja e dytë", radians: (3 * Math.PI) / 2 }
+          { label: "Zgjidhja e pare", radians: Math.PI / 2 },
+          { label: "Zgjidhja e dyte", radians: (3 * Math.PI) / 2 }
         ];
       } else {
         const alpha = Math.atan(1 / number);
@@ -84,8 +84,8 @@ function Equations() {
 
         general = "x = a + kp";
         solutions = [
-          { label: "Zgjidhja e parë", radians: first },
-          { label: "Zgjidhja e dytë", radians: normalizeAngle(first + Math.PI) }
+          { label: "Zgjidhja e pare", radians: first },
+          { label: "Zgjidhja e dyte", radians: normalizeAngle(first + Math.PI) }
         ];
       }
     }
@@ -108,8 +108,8 @@ function Equations() {
         <span className="section-eyebrow">ZGJIDHJA E EKUACIONEVE</span>
         <h1>Ekuacionet trigonometrike</h1>
         <p>
-          Zgjidh ekuacione bazë trigonometrike dhe shiko zgjidhjet
-          në intervalin [0, 2p), si dhe formën e përgjithshme.
+          Zgjidh ekuacione baze trigonometrike dhe shiko zgjidhjet
+          ne intervalin [0, 2p), si dhe formen e pergjithshme.
         </p>
       </header>
 
@@ -143,7 +143,7 @@ function Equations() {
               step="any"
               value={value}
               onChange={(event) => setValue(event.target.value)}
-              placeholder="Shkruaj vlerën"
+              placeholder="Shkruaj vleren"
             />
           </div>
 
@@ -172,7 +172,7 @@ function Equations() {
               </div>
 
               <div className="equation-general">
-                <h3>Zgjidhja e përgjithshme</h3>
+                <h3>Zgjidhja e pergjithshme</h3>
                 <p>{results.general}</p>
                 <p>
                   <strong>k</strong> ? Z
@@ -180,7 +180,7 @@ function Equations() {
               </div>
 
               <div className="equation-solutions">
-                <h3>Zgjidhjet në intervalin [0, 2p)</h3>
+                <h3>Zgjidhjet ne intervalin [0, 2p)</h3>
 
                 {results.solutions.map((solution, index) => (
                   <article className="equation-solution-card" key={index}>
@@ -189,7 +189,7 @@ function Equations() {
                       {formatNumber(solution.radians)} rad
                     </strong>
                     <span>
-                      {formatNumber(solution.degrees)}°
+                      {formatNumber(solution.degrees)}
                     </span>
                   </article>
                 ))}
@@ -197,7 +197,7 @@ function Equations() {
             </>
           ) : (
             <div className="calculator-empty">
-              <p>Vendos funksionin dhe vlerën për të parë zgjidhjet.</p>
+              <p>Vendos funksionin dhe vleren per te par zgjidhjet.</p>
             </div>
           )}
         </div>

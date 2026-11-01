@@ -11,7 +11,7 @@ function Calculator() {
     const value = Number(angle);
 
     if (angle.trim() === "" || !Number.isFinite(value)) {
-      setError("Shkruaj një kënd të vlefshëm.");
+      setError("Shkruaj nje kend te vlefshem.");
       setResults(null);
       return;
     }
@@ -25,7 +25,7 @@ function Calculator() {
     const isZero = (number) => Math.abs(number) < 1e-12;
 
     const format = (number) => {
-      if (number === null) return "E papërcaktuar";
+      if (number === null) return "E papercaktuar";
       if (Math.abs(number) < 1e-12) return "0";
 
       return Number(number.toFixed(Number(precision))).toString();
@@ -37,12 +37,12 @@ function Calculator() {
       {
         name: "tan",
         expression: "tan(a)",
-        value: isZero(cos) ? "E papërcaktuar" : format(sin / cos)
+        value: isZero(cos) ? "E papercaktuar" : format(sin / cos)
       },
       {
         name: "cot",
         expression: "cot(a)",
-        value: isZero(sin) ? "E papërcaktuar" : format(cos / sin)
+        value: isZero(sin) ? "E papercaktuar" : format(cos / sin)
       }
     ]);
 
@@ -55,17 +55,17 @@ function Calculator() {
         <span className="section-eyebrow">MJET MATEMATIKOR</span>
         <h1>Kalkulatori trigonometrik</h1>
         <p>
-          Llogarit vlerat e funksioneve trigonometrike për çdo kënd
-          në gradë ose radianë.
+          Llogarit vlerat e funksioneve trigonometrike pÃ«r Ã§do kÃ«nd
+          nÃ« gradÃ« ose radian.
         </p>
       </header>
 
       <section className="calculator-layout">
         <div className="calculator-panel">
-          <h2>Vendos këndin</h2>
+          <h2>Vendos kendin</h2>
 
           <div className="form-group">
-            <label htmlFor="angle">Këndi (a)</label>
+            <label htmlFor="angle">Kendi (a)</label>
             <input
               id="angle"
               type="number"
@@ -77,14 +77,14 @@ function Calculator() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="angle-unit">Njësia matëse</label>
+            <label htmlFor="angle-unit">Njesia matese</label>
             <select
               id="angle-unit"
               value={unit}
               onChange={(event) => setUnit(event.target.value)}
             >
-              <option value="degrees">Gradë (°)</option>
-              <option value="radians">Radianë (rad)</option>
+              <option value="degrees">Grade (e)</option>
+              <option value="radians">Radiane (rad)</option>
             </select>
           </div>
 
@@ -132,15 +132,15 @@ function Calculator() {
             </div>
           ) : (
             <div className="calculator-empty">
-              <p>Vendos një kënd dhe shtyp "Llogarit" për të parë rezultatet.</p>
+              <p>Vendos nje kend dhe shtyp "Llogarit" per te pare rezultatet.</p>
             </div>
           )}
 
           <div className="calculator-note">
-            <strong>Vërejtje matematikore</strong>
+            <strong>Verejtje matematikore</strong>
             <p>
-              Tangjenta nuk është e përcaktuar kur cos(a) = 0.
-              Kotangjenta nuk është e përcaktuar kur sin(a) = 0.
+              Tangjenta nuk eshte e percaktuar kur cos(a) = 0.
+              Kotangjenta nuk eshte e percaktuar kur sin(a) = 0.
             </p>
           </div>
         </div>

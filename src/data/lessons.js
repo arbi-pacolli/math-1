@@ -3,20 +3,20 @@ export const lessons = [
     id: "addition-formulas",
     number: 1,
     title: "Formulat e adicionit",
-    description: "Mëso si të llogaritësh funksionet trigonometrike të shumës dhe ndryshimit të këndeve.",
+    description: "Meso si te llogaritesh funksionet trigonometrike te shumes dhe ndryshimit te kendeve.",
     duration: "20 min",
     topics: [
       {
-        title: "Sinusi i shumës dhe ndryshimit",
-        explanation: "Për të gjetur sinusin e shumës ose ndryshimit të dy këndeve, përdor formulat e adicionit.",
+        title: "Sinusi i shumes dhe ndryshimit",
+        explanation: "Per te gjetur sinusin e shumes ose ndryshimit te dy kendeve, perdor formulat e adicionit.",
         formulas: [
           String.raw`\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta`,
           String.raw`\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta`
         ]
       },
       {
-        title: "Kosinusi i shumës dhe ndryshimit",
-        explanation: "Te kosinusi, shenja ndërmjet prodhimeve është e kundërt me shenjën brenda kllapave.",
+        title: "Kosinusi i shumes dhe ndryshimit",
+        explanation: "Te kosinusi, shenja ndermjet prodhimeve eshte e kundert me shenjen brenda kllapave.",
         formulas: [
           String.raw`\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta`,
           String.raw`\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta`
@@ -24,7 +24,7 @@ export const lessons = [
       },
       {
         title: "Tangjenti dhe kotangjenti",
-        explanation: "Tangjenti dhe kotangjenti i shumës ose ndryshimit shprehen përmes funksioneve të këndeve përkatëse.",
+        explanation: "Tangjenti dhe kotangjenti i shumes ose ndryshimit shprehen permes funksioneve te kendeve perkatese.",
         formulas: [
           String.raw`\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}`,
           String.raw`\tan(\alpha-\beta)=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}`,
@@ -34,18 +34,18 @@ export const lessons = [
       }
     ],
     example: {
-      title: "Shembull: Llogaritja e cos 75°",
+      title: "Shembull: Llogaritja e cos 75e",
       steps: [
         {
-          title: "Shkruaj këndin si shumë",
+          title: "Shkruaj kendin si shume",
           expression: String.raw`\cos 75^\circ=\cos(45^\circ+30^\circ)`
         },
         {
-          title: "Përdor formulën e kosinusit",
+          title: "Perdor formulen e kosinusit",
           expression: String.raw`\cos(45^\circ+30^\circ)=\cos45^\circ\cos30^\circ-\sin45^\circ\sin30^\circ`
         },
         {
-          title: "Zëvendëso vlerat",
+          title: "Zevendeso vlerat",
           expression: String.raw`=\frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2}-\frac{\sqrt{2}}{2}\cdot\frac{1}{2}`
         },
         {
@@ -58,20 +58,20 @@ export const lessons = [
   {
     id: "double-angle",
     number: 2,
-    title: "Formulat e këndit të dyfishtë",
-    description: "Nxjerrja dhe përdorimi i formulave për këndin 2a.",
+    title: "Formulat e kendit te dyfishte",
+    description: "Nxjerrja dhe perdorimi i formulave per kendin 2a.",
     duration: "15 min",
     topics: [
       {
-        title: "Sinusi i këndit të dyfishtë",
-        explanation: "Formula fitohet duke zbatuar formulën e adicionit për sin(a + a).",
+        title: "Sinusi i kendit te dyfishte",
+        explanation: "Formula fitohet duke zbatuar formulen e adicionit per sin(a + a).",
         formulas: [
           String.raw`\sin 2\alpha=2\sin\alpha\cos\alpha`
         ]
       },
       {
-        title: "Kosinusi i këndit të dyfishtë",
-        explanation: "Kosinusi i këndit të dyfishtë mund të paraqitet në tri forma të barasvlershme.",
+        title: "Kosinusi i kendit te dyfishte",
+        explanation: "Kosinusi i kendit te dyfishte mund te paraqitet ne tri forma te barasvlershme.",
         formulas: [
           String.raw`\cos 2\alpha=\cos^2\alpha-\sin^2\alpha`,
           String.raw`\cos 2\alpha=2\cos^2\alpha-1`,
@@ -79,8 +79,8 @@ export const lessons = [
         ]
       },
       {
-        title: "Tangjenti dhe kotangjenti i këndit të dyfishtë",
-        explanation: "Këto formula shprehin tangjentin dhe kotangjentin e këndit 2a përmes funksioneve të këndit a.",
+        title: "Tangjenti dhe kotangjenti i kendit te dyfishte",
+        explanation: "Keto formula shprehin tangjentin dhe kotangjentin e kendit 2a permes funksioneve te kendit a.",
         formulas: [
           String.raw`\tan 2\alpha=\frac{2\tan\alpha}{1-\tan^2\alpha}`,
           String.raw`\cot 2\alpha=\frac{\cot^2\alpha-1}{2\cot\alpha}`
@@ -91,21 +91,21 @@ export const lessons = [
   {
     id: "half-angle",
     number: 3,
-    title: "Formulat e këndit përgjysmë",
-    description: "Përdorimi i formulave për këndin a/2.",
+    title: "Formulat e kendit pergjysme",
+    description: "Perdorimi i formulave per kendin a/2.",
     duration: "15 min",
     topics: [
       {
-        title: "Sinusi dhe kosinusi i këndit përgjysmë",
-        explanation: "Këto formula nxirren nga formulat e kosinusit të këndit të dyfishtë. Shenja përcaktohet nga kuadranti.",
+        title: "Sinusi dhe kosinusi i kendit pergjysme",
+        explanation: "Keto formula nxirren nga formulat e kosinusit te kendit te dyfishte. Shenja percaktohet nga kuadranti.",
         formulas: [
           String.raw`\sin\frac{\alpha}{2}=\pm\sqrt{\frac{1-\cos\alpha}{2}}`,
           String.raw`\cos\frac{\alpha}{2}=\pm\sqrt{\frac{1+\cos\alpha}{2}}`
         ]
       },
       {
-        title: "Tangjenti i këndit përgjysmë",
-        explanation: "Tangjenti i këndit përgjysmë mund të paraqitet në disa forma.",
+        title: "Tangjenti i kendit pergjysme",
+        explanation: "Tangjenti i kendit pergjysme mund te paraqitet ne disa forma.",
         formulas: [
           String.raw`\tan\frac{\alpha}{2}=\pm\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}`,
           String.raw`\tan\frac{\alpha}{2}=\frac{\sin\alpha}{1+\cos\alpha}`,
@@ -118,12 +118,12 @@ export const lessons = [
     id: "t-formulas",
     number: 4,
     title: "Formulat T",
-    description: "Shprehja e funksioneve trigonometrike përmes zëvendësimit t = tan(a/2).",
+    description: "Shprehja e funksioneve trigonometrike permes zevendesimit t = tan(a/2).",
     duration: "15 min",
     topics: [
       {
-        title: "Zëvendësimi T",
-        explanation: "Vendosim t = tan(a/2). Me këtë zëvendësim, funksionet trigonometrike të këndit a shprehen si thyesa racionale.",
+        title: "Zevendesimi T",
+        explanation: "Vendosim t = tan(a/2). Me kete zevendesim, funksionet trigonometrike te kendit a shprehen si thyesa racionale.",
         formulas: [
           String.raw`t=\tan\frac{\alpha}{2}`,
           String.raw`\sin\alpha=\frac{2t}{1+t^2}`,
@@ -138,12 +138,12 @@ export const lessons = [
     id: "transformations",
     number: 5,
     title: "Transformimet trigonometrike",
-    description: "Shndërrimi i prodhimeve në shuma dhe i shumave në prodhime.",
+    description: "Shnderrimi i prodhimeve ne shuma dhe i shumave ne prodhime.",
     duration: "20 min",
     topics: [
       {
-        title: "Prodhimi në shumë",
-        explanation: "Formulat e mëposhtme mundësojnë shndërrimin e prodhimeve të funksioneve trigonometrike në shuma ose diferenca.",
+        title: "Prodhimi ne shume",
+        explanation: "Formulat e meposhtme mundesojne shnderrimin e prodhimeve te funksioneve trigonometrike ne shuma ose diferenca.",
         formulas: [
           String.raw`\sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]`,
           String.raw`\cos\alpha\sin\beta=\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]`,
@@ -152,8 +152,8 @@ export const lessons = [
         ]
       },
       {
-        title: "Shuma në prodhim",
-        explanation: "Këto formula shndërrojnë shumën ose diferencën e dy funksioneve trigonometrike në prodhim.",
+        title: "Shuma ne prodhim",
+        explanation: "Keto formula shnderrojne shumen ose diferencen e dy funksioneve trigonometrike ne prodhim.",
         formulas: [
           String.raw`\sin\alpha+\sin\beta=2\sin\frac{\alpha+\beta}{2}\cos\frac{\alpha-\beta}{2}`,
           String.raw`\sin\alpha-\sin\beta=2\cos\frac{\alpha+\beta}{2}\sin\frac{\alpha-\beta}{2}`,
@@ -167,12 +167,12 @@ export const lessons = [
     id: "trigonometric-equations",
     number: 6,
     title: "Ekuacionet trigonometrike",
-    description: "Zgjidhja e ekuacioneve bazë trigonometrike.",
+    description: "Zgjidhja e ekuacioneve baze trigonometrike.",
     duration: "20 min",
     topics: [
       {
-        title: "Ekuacionet bazë",
-        explanation: "Ekuacionet bazë trigonometrike përfshijnë sinusin, kosinusin, tangjentin dhe kotangjentin.",
+        title: "Ekuacionet baze",
+        explanation: "Ekuacionet baze trigonometrike perfshijne sinusin, kosinusin, tangjentin dhe kotangjentin.",
         formulas: [
           String.raw`\sin x=a`,
           String.raw`\cos x=b`,
@@ -182,7 +182,7 @@ export const lessons = [
       },
       {
         title: "Perioda e funksioneve",
-        explanation: "Sinusi dhe kosinusi kanë periodë 2p. Tangjenti dhe kotangjenti kanë periodë p.",
+        explanation: "Sinusi dhe kosinusi kane periode 2p. Tangjenti dhe kotangjenti kane periode p.",
         formulas: [
           String.raw`\sin(x+2k\pi)=\sin x`,
           String.raw`\cos(x+2k\pi)=\cos x`,

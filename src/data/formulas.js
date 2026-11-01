@@ -2,27 +2,27 @@ export const formulaCategories = [
   {
     id: "addition",
     title: "Formulat e adicionit",
-    description: "Formulat për shumën dhe ndryshimin e këndeve."
+    description: "Formulat per shumen dhe ndryshimin e kendeve."
   },
   {
     id: "double-angle",
-    title: "Formulat e këndit të dyfishtë",
-    description: "Formulat për këndin 2a."
+    title: "Formulat e kendit te dyfishte",
+    description: "Formulat per kendin 2a."
   },
   {
     id: "half-angle",
-    title: "Formulat e këndit përgjysmë",
-    description: "Formulat për këndin a/2."
+    title: "Formulat e kendit pergjysme",
+    description: "Formulat per kendin a/2."
   },
   {
     id: "t-formulas",
     title: "Formulat T",
-    description: "Shprehja e funksioneve trigonometrike përmes t = tan(a/2)."
+    description: "Shprehja e funksioneve trigonometrike permes t = tan(a/2)."
   },
   {
     id: "transformations",
     title: "Transformimet trigonometrike",
-    description: "Shndërrimi i prodhimeve në shuma dhe anasjelltas."
+    description: "Shnderrimi i prodhimeve ne shuma dhe anasjelltas."
   }
 ];
 
@@ -31,7 +31,7 @@ export const formulas = [
   {
     id: "sin-addition",
     category: "addition",
-    title: "Sinusi i shumës",
+    title: "Sinusi i shumes",
     expression: String.raw`\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta`
   },
   {
@@ -43,7 +43,7 @@ export const formulas = [
   {
     id: "cos-addition",
     category: "addition",
-    title: "Kosinusi i shumës",
+    title: "Kosinusi i shumes",
     expression: String.raw`\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta`
   },
   {
@@ -55,7 +55,7 @@ export const formulas = [
   {
     id: "tan-addition",
     category: "addition",
-    title: "Tangjenti i shumës",
+    title: "Tangjenti i shumes",
     expression: String.raw`\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}`
   },
   {
@@ -67,7 +67,7 @@ export const formulas = [
   {
     id: "cot-addition",
     category: "addition",
-    title: "Kotangjenti i shumës",
+    title: "Kotangjenti i shumes",
     expression: String.raw`\cot(\alpha+\beta)=\frac{\cot\alpha\cot\beta-1}{\cot\alpha+\cot\beta}`
   },
   {
@@ -81,37 +81,37 @@ export const formulas = [
   {
     id: "sin-double",
     category: "double-angle",
-    title: "Sinusi i këndit të dyfishtë",
+    title: "Sinusi i kendit te dyfishte",
     expression: String.raw`\sin 2\alpha=2\sin\alpha\cos\alpha`
   },
   {
     id: "cos-double-1",
     category: "double-angle",
-    title: "Kosinusi i këndit të dyfishtë",
+    title: "Kosinusi i kendit te dyfishte",
     expression: String.raw`\cos 2\alpha=\cos^2\alpha-\sin^2\alpha`
   },
   {
     id: "cos-double-2",
     category: "double-angle",
-    title: "Kosinusi i këndit të dyfishtë - forma 2",
+    title: "Kosinusi i kendit te dyfishte - forma 2",
     expression: String.raw`\cos 2\alpha=2\cos^2\alpha-1`
   },
   {
     id: "cos-double-3",
     category: "double-angle",
-    title: "Kosinusi i këndit të dyfishtë - forma 3",
+    title: "Kosinusi i kendit te dyfishte - forma 3",
     expression: String.raw`\cos 2\alpha=1-2\sin^2\alpha`
   },
   {
     id: "tan-double",
     category: "double-angle",
-    title: "Tangjenti i këndit të dyfishtë",
+    title: "Tangjenti i kendit te dyfishte",
     expression: String.raw`\tan 2\alpha=\frac{2\tan\alpha}{1-\tan^2\alpha}`
   },
   {
     id: "cot-double",
     category: "double-angle",
-    title: "Kotangjenti i këndit të dyfishtë",
+    title: "Kotangjenti i kendit te dyfishte",
     expression: String.raw`\cot 2\alpha=\frac{\cot^2\alpha-1}{2\cot\alpha}`
   },
 
@@ -119,33 +119,33 @@ export const formulas = [
   {
     id: "sin-half",
     category: "half-angle",
-    title: "Sinusi i këndit përgjysmë",
+    title: "Sinusi i kendit pergjysme",
     expression: String.raw`\sin\frac{\alpha}{2}=\pm\sqrt{\frac{1-\cos\alpha}{2}}`,
-    note: "Shenja përcaktohet nga kuadranti ku ndodhet këndi a/2."
+    note: "Shenja percaktohet nga kuadranti ku ndodhet kendi a/2."
   },
   {
     id: "cos-half",
     category: "half-angle",
-    title: "Kosinusi i këndit përgjysmë",
+    title: "Kosinusi i kendit pergjysme",
     expression: String.raw`\cos\frac{\alpha}{2}=\pm\sqrt{\frac{1+\cos\alpha}{2}}`,
-    note: "Shenja përcaktohet nga kuadranti ku ndodhet këndi a/2."
+    note: "Shenja percaktohet nga kuadranti ku ndodhet kendi a/2."
   },
   {
     id: "tan-half-1",
     category: "half-angle",
-    title: "Tangjenti i këndit përgjysmë",
+    title: "Tangjenti i kendit pergjysme",
     expression: String.raw`\tan\frac{\alpha}{2}=\pm\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}`
   },
   {
     id: "tan-half-2",
     category: "half-angle",
-    title: "Tangjenti i këndit përgjysmë - forma 2",
+    title: "Tangjenti i kendit pergjysme - forma 2",
     expression: String.raw`\tan\frac{\alpha}{2}=\frac{\sin\alpha}{1+\cos\alpha}`
   },
   {
     id: "tan-half-3",
     category: "half-angle",
-    title: "Tangjenti i këndit përgjysmë - forma 3",
+    title: "Tangjenti i kendit pergjysme - forma 3",
     expression: String.raw`\tan\frac{\alpha}{2}=\frac{1-\cos\alpha}{\sin\alpha}`
   },
 
@@ -153,28 +153,28 @@ export const formulas = [
   {
     id: "t-sin",
     category: "t-formulas",
-    title: "Sinusi përmes t",
+    title: "Sinusi permes t",
     expression: String.raw`\sin\alpha=\frac{2t}{1+t^2}`,
     note: String.raw`Ku t=\tan\frac{\alpha}{2}.`
   },
   {
     id: "t-cos",
     category: "t-formulas",
-    title: "Kosinusi përmes t",
+    title: "Kosinusi permes t",
     expression: String.raw`\cos\alpha=\frac{1-t^2}{1+t^2}`,
     note: String.raw`Ku t=\tan\frac{\alpha}{2}.`
   },
   {
     id: "t-tan",
     category: "t-formulas",
-    title: "Tangjenti përmes t",
+    title: "Tangjenti permes t",
     expression: String.raw`\tan\alpha=\frac{2t}{1-t^2}`,
     note: String.raw`Ku t=\tan\frac{\alpha}{2}.`
   },
   {
     id: "t-cot",
     category: "t-formulas",
-    title: "Kotangjenti përmes t",
+    title: "Kotangjenti permes t",
     expression: String.raw`\cot\alpha=\frac{1-t^2}{2t}`,
     note: String.raw`Ku t=\tan\frac{\alpha}{2}.`
   },

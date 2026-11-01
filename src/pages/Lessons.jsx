@@ -20,23 +20,23 @@ function Lessons() {
   return (
     <main className="page lessons-page">
       <section className="page-header">
-        <span className="section-eyebrow">PROGRAMI MËSIMOR</span>
-        <h1>Të gjitha mësimet</h1>
+        <span className="section-eyebrow">PROGRAMI MÃ‹SIMOR</span>
+        <h1>TÃ« gjitha mÃ«simet</h1>
         <p>
-          Ndiq temat hap pas hapi dhe përforco njohuritë e tua
-          në matematikën trigonometrike.
+          Ndiq temat hap pas hapi dhe pÃ«rfundo njohuritÃ« e tua
+          nÃ« matematikÃ«n trigonometrike.
         </p>
       </section>
 
       <section className="lessons-overview">
         <div>
           <strong>{completedCount}/{lessons.length}</strong>
-          <span>Mësime të përfunduara</span>
+          <span>MÃ«simet e pÃ«rfunduara</span>
         </div>
 
         <div>
           <strong>{lessons.length - completedCount}</strong>
-          <span>Mësime të mbetura</span>
+          <span>MÃ«simet e mbetura</span>
         </div>
       </section>
 
@@ -44,7 +44,7 @@ function Lessons() {
         <div className="section-heading">
           <div>
             <span className="section-eyebrow">MATERIALI</span>
-            <h2>Temat e ligjëratës</h2>
+            <h2>Temat e ligjÃ«ratÃ«s</h2>
           </div>
         </div>
 
@@ -67,11 +67,11 @@ function Lessons() {
       </section>
 
       <section className="lessons-note">
-        <h3>Rekomandim për mësim</h3>
+        <h3>Rekomandim pÃ«r mÃ«sim</h3>
         <p>
           Ndiq renditjen e temave. Fillimisht kupto formulat e adicionit,
-          pastaj vazhdo me formulat e këndit të dyfishtë dhe përgjysmë.
-          Në fund, praktiko transformimet dhe ekuacionet trigonometrike.
+          pastaj vazhdo me formulat e kÃ«ndit tÃ« dyfishtÃ« dhe pÃ«rgjysmÃ«.
+          NÃ« fund, praktiko transformimet dhe ekuacionet trigonometrike.
         </p>
       </section>
     </main>

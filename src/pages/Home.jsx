@@ -23,15 +23,15 @@ function Home() {
       <section className="hero">
         <div className="hero__content">
           <span className="hero__label">MATHEMATIKA 1</span>
-          <h1>Mëso trigonometrinë në mënyrë interaktive.</h1>
+          <h1>Meso trigonometrine ne menyre interaktive.</h1>
           <p>
-            Mëso formulat, kupto shembujt dhe testo njohuritë
-            përmes ushtrimeve praktike.
+            Meso formulat, kupto shembujt dhe testo njohurite
+            permes ushtrimeve praktike.
           </p>
 
           <div className="hero__actions">
             <Link to="/lessons" className="btn">
-              Fillo mësimin
+              Fillo mesimin
             </Link>
             <Link to="/practice" className="btn btn--outline">
               Praktiko
@@ -42,12 +42,12 @@ function Home() {
 
       <section className="dashboard-stats">
         <article className="stat-card">
-          <span className="stat-card__label">Mësimet gjithsej</span>
+          <span className="stat-card__label">MÃ«simet gjithsej</span>
           <strong className="stat-card__value">{totalLessons}</strong>
         </article>
 
         <article className="stat-card">
-          <span className="stat-card__label">Mësimet e përfunduara</span>
+          <span className="stat-card__label">MÃ«simet e pÃ«rfunduara</span>
           <strong className="stat-card__value">{completedCount}</strong>
         </article>
 
@@ -63,22 +63,22 @@ function Home() {
             <span className="section-eyebrow">PROGRESI YT</span>
             <h2>Vazhdo aty ku ke mbetur</h2>
           </div>
-          <Link to="/lessons">Shiko të gjitha</Link>
+          <Link to="/lessons">Shiko tÃ« gjitha</Link>
         </div>
 
         <ProgressBar
           value={overallProgress}
-          label="Progresi i mësimeve"
+          label="Progresi i mÃ«simve"
         />
       </section>
 
       <section className="home-lessons">
         <div className="section-heading">
           <div>
-            <span className="section-eyebrow">PROGRAMI MËSIMOR</span>
-            <h2>Mësimet</h2>
+            <span className="section-eyebrow">PROGRAMI MÃ‹SIMOR</span>
+            <h2>MÃ«simet</h2>
           </div>
-          <Link to="/lessons">Shiko të gjitha</Link>
+          <Link to="/lessons">Shiko tÃ« gjitha</Link>
         </div>
 
         <div className="lesson-grid">
@@ -117,19 +117,19 @@ function Home() {
           <Link to="/unit-circle" className="tool-card">
             <span className="tool-card__number">02</span>
             <h3>Rrethi trigonometrik</h3>
-            <p>Eksploro këndet dhe koordinatat në rrethin njësi.</p>
+            <p>Eksploro kendet dhe koordinatat ne rrethin njesi.</p>
           </Link>
 
           <Link to="/equations" className="tool-card">
             <span className="tool-card__number">03</span>
             <h3>Ekuacionet</h3>
-            <p>Zgjidh ekuacione bazë trigonometrike.</p>
+            <p>Zgjidh ekuacione baze trigonometrike.</p>
           </Link>
 
           <Link to="/practice" className="tool-card">
             <span className="tool-card__number">04</span>
             <h3>Ushtrimet</h3>
-            <p>Testo njohuritë me pyetje interaktive.</p>
+            <p>Testo njohurite me pyetje interaktive.</p>
           </Link>
         </div>
       </section>

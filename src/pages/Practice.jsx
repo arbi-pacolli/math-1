@@ -43,29 +43,29 @@ function Practice() {
   return (
     <main className="page practice-page">
       <header className="page-header">
-        <span className="section-eyebrow">TESTO NJOHURITË</span>
+        <span className="section-eyebrow">TESTO NJOHURITE</span>
         <h1>Ushtrime praktike</h1>
         <p>
-          Përgjigju pyetjeve për formulat dhe konceptet e
-          trigonometrisë. Kontrollo përgjigjet dhe mëso nga shpjegimet.
+          PÃ«rgjigju pyetjeve pÃ«r formulat dhe konceptet e
+          trigonometrisÃ«. Kontrollo pÃ«rgjigjet dhe mÃ«so nga shpjegimet.
         </p>
       </header>
 
       <section className="practice-overview">
         <article className="stat-card">
-          <span className="stat-card__label">Pyetje në dispozicion</span>
+          <span className="stat-card__label">Pyetje ne dispozicion</span>
           <strong className="stat-card__value">{questions.length}</strong>
         </article>
 
         <article className="stat-card">
-          <span className="stat-card__label">Pyetje për test</span>
+          <span className="stat-card__label">Pyetje per test</span>
           <strong className="stat-card__value">
             {Math.min(QUESTIONS_PER_QUIZ, questions.length)}
           </strong>
         </article>
 
         <article className="stat-card">
-          <span className="stat-card__label">Kalueshmëria</span>
+          <span className="stat-card__label">Kalueshmeria</span>
           <strong className="stat-card__value">80%</strong>
         </article>
       </section>
@@ -80,7 +80,7 @@ function Practice() {
               </div>
 
               <span className="practice-quiz__score">
-                Pikët: {score}
+                Piket: {score}
               </span>
             </div>
 
@@ -105,7 +105,7 @@ function Practice() {
           </>
         ) : (
           <div className="quiz-results">
-            <span className="section-eyebrow">TESTI PËRFUNDOI</span>
+            <span className="section-eyebrow">TESTI PERFUNDOI</span>
 
             <h2>Rezultati yt</h2>
 
@@ -115,19 +115,19 @@ function Practice() {
 
             <p className="quiz-results__message">
               {percentage >= 80
-                ? "E kalove testin. Ke arritur rezultat të mirë."
-                : "Nuk e arritë pragun prej 80%. Përsëriti temat dhe provo përsëri."}
+                ? "E kalove testin. Ke arritur rezultat tÃ« mirÃ«."
+                : "Nuk e arritÃ« pragun prej 80%. PPerserit temat dhe provo pÃ«rsÃ«ri."}
             </p>
 
             <div className="quiz-results__stats">
               <div>
                 <strong>{score}</strong>
-                <span>Përgjigje të sakta</span>
+                <span>PÃ«rgjigje tÃ« sakta</span>
               </div>
 
               <div>
                 <strong>{quizQuestions.length - score}</strong>
-                <span>Përgjigje të pasakta</span>
+                <span>PÃ«rgjigje tÃ« pasakta</span>
               </div>
 
               <div>
@@ -147,11 +147,11 @@ function Practice() {
                 className="btn"
                 onClick={restartQuiz}
               >
-                Provo përsëri
+                Provo pÃ«rsÃ«ri
               </button>
 
               <Link to="/lessons" className="btn btn--outline">
-                Përsërit mësimet
+                Perserit mesimet
               </Link>
             </div>
           </div>

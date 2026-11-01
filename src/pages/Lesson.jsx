@@ -25,10 +25,10 @@ function Lesson() {
   if (!lesson) {
     return (
       <main className="page not-found">
-        <h1>Mësimi nuk u gjet</h1>
-        <p>Mësimi që kërkove nuk ekziston.</p>
+        <h1>MÃ«simi nuk u gjet</h1>
+        <p>MÃ«simi qÃ« kÃ«rkuove nuk ekziston.</p>
         <Link to="/lessons" className="btn">
-          Kthehu te mësimet
+          Kthehu te mÃ«simet
         </Link>
       </main>
     );
@@ -65,14 +65,14 @@ function Lesson() {
       <nav className="breadcrumb">
         <Link to="/">Ballina</Link>
         <span>/</span>
-        <Link to="/lessons">Mësimet</Link>
+        <Link to="/lessons">MÃ«simet</Link>
         <span>/</span>
         <span>{lesson.title}</span>
       </nav>
 
       <header className="lesson-header">
         <span className="section-eyebrow">
-          MËSIMI {lesson.number} / {lessons.length}
+          MÃ‹SIMI {lesson.number} / {lessons.length}
         </span>
 
         <h1>{lesson.title}</h1>
@@ -82,14 +82,14 @@ function Lesson() {
         <div className="lesson-header__meta">
           <span>{lesson.duration}</span>
           <span>{lesson.topics.length} tema</span>
-          <span>{completed ? "I përfunduar" : "Në pritje"}</span>
+          <span>{completed ? "I pÃ«rfunduar" : "NÃ« pritje"}</span>
         </div>
       </header>
 
       <section className="lesson-progress">
         <ProgressBar
           value={completed ? 100 : 0}
-          label="Statusi i mësimit"
+          label="Statusi i mÃ«simve"
         />
       </section>
 
@@ -148,11 +148,11 @@ function Lesson() {
 
       <section className="lesson-completion">
         <div>
-          <h2>{completed ? "Mësimi u përfundua" : "Përfundove mësimin?"}</h2>
+          <h2>{completed ? "MÃ«simi u pÃ«rfundua" : "PÃ«rfundove mÃ«simin?"}</h2>
           <p>
             {completed
-              ? "Ky mësim është regjistruar në progresin tënd."
-              : "Shënoje si të përfunduar për të ruajtur progresin."}
+              ? "Ky mÃ«sim Ã«shtÃ« regjistruar nÃ« progresin tÃ«nd."
+              : "ShÃ«noje si tÃ« pÃ«rfunduar pÃ«r tÃ« ruajtur progresin."}
           </p>
         </div>
 
@@ -161,7 +161,7 @@ function Lesson() {
           className={completed ? "btn btn--outline" : "btn"}
           onClick={toggleCompletion}
         >
-          {completed ? "Hiq përfundimin" : "Përfundo mësimin"}
+          {completed ? "Hiq pÃ«rfundimin" : "PÃ«rfundo mÃ«simin"}
         </button>
       </section>
 
@@ -171,7 +171,7 @@ function Lesson() {
             to={`/lessons/${previousLesson.id}`}
             className="btn btn--outline"
           >
-            ? Mësimi paraprak
+            â† MÃ«simi paraprak
           </Link>
         ) : (
           <span />
@@ -182,11 +182,11 @@ function Lesson() {
             to={`/lessons/${nextLesson.id}`}
             className="btn"
           >
-            Mësimi tjetër ?
+            MÃ«simi tjetÃ«r â†’
           </Link>
         ) : (
           <Link to="/practice" className="btn">
-            Fillo ushtrimet ?
+            Fillo ushtrimet â†’
           </Link>
         )}
       </nav>

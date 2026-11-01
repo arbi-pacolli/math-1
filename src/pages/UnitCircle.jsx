@@ -18,7 +18,7 @@ function UnitCircle() {
 
   const angleLabel =
     unit === "degrees"
-      ? `${angle}°`
+      ? `${angle}Â°`
       : `${Number(radians.toFixed(4))} rad`;
 
   const format = (number) =>
@@ -34,7 +34,7 @@ function UnitCircle() {
         <span className="section-eyebrow">GJEOMETRIA TRIGONOMETRIKE</span>
         <h1>Rrethi trigonometrik</h1>
         <p>
-          Ndrysho këndin dhe vëzhgo pozicionin e pikës në rreth,
+          Ndrysho kendin dhe vezhgo pozicionin e pikes ne rreth,
           koordinatat dhe vlerat e funksioneve trigonometrike.
         </p>
       </header>
@@ -42,7 +42,7 @@ function UnitCircle() {
       <section className="unit-circle-layout">
         <div className="unit-circle-visual">
           <div className="unit-circle-visual__header">
-            <h2>Rrethi njësi</h2>
+            <h2>Rrethi njesi</h2>
             <span className="unit-circle-angle">{angleLabel}</span>
           </div>
 
@@ -50,7 +50,7 @@ function UnitCircle() {
             viewBox="0 0 400 400"
             className="unit-circle-svg"
             role="img"
-            aria-label={`Rrethi trigonometrik me kënd ${angle} gradë`}
+            aria-label={`Rrethi trigonometrik me kÃ«nd ${angle} gradÃ«`}
           >
             <defs>
               <pattern
@@ -168,10 +168,10 @@ function UnitCircle() {
         </div>
 
         <div className="unit-circle-controls">
-          <h2>Kontrollo këndin</h2>
+          <h2>Kontrollo kÃ«ndin</h2>
 
           <div className="form-group">
-            <label htmlFor="circle-angle">Këndi në gradë</label>
+            <label htmlFor="circle-angle">KÃ«ndi nÃ« grade</label>
             <div className="unit-circle-angle-input">
               <input
                 id="circle-angle"
@@ -188,7 +188,7 @@ function UnitCircle() {
                   }
                 }}
               />
-              <span>°</span>
+              <span>Â°</span>
             </div>
           </div>
 
@@ -200,7 +200,7 @@ function UnitCircle() {
             step="1"
             value={angle}
             onChange={(event) => handleAngleChange(event.target.value)}
-            aria-label="Ndrysho këndin"
+            aria-label="Ndrysho kÃ«ndin"
           />
 
           <div className="unit-circle-presets">
@@ -211,7 +211,7 @@ function UnitCircle() {
                 className={angle === value ? "is-active" : ""}
                 onClick={() => setAngle(value)}
               >
-                {value}°
+                {value}Â°
               </button>
             ))}
           </div>
@@ -232,27 +232,27 @@ function UnitCircle() {
             <div className="unit-circle-value">
               <span>tan(a)</span>
               <strong>
-                {Math.abs(cos) < 1e-10 ? "E papërcaktuar" : format(sin / cos)}
+                {Math.abs(cos) < 1e-10 ? "E papÃ«rcaktuar" : format(sin / cos)}
               </strong>
             </div>
 
             <div className="unit-circle-value">
               <span>cot(a)</span>
               <strong>
-                {Math.abs(sin) < 1e-10 ? "E papërcaktuar" : format(cos / sin)}
+                {Math.abs(sin) < 1e-10 ? "E papÃ«rcaktuar" : format(cos / sin)}
               </strong>
             </div>
           </div>
 
           <div className="unit-circle-coordinates">
-            <h3>Koordinatat e pikës P</h3>
+            <h3>Koordinatat e pikÃ«s P</h3>
             <strong>({format(cos)}, {format(sin)})</strong>
             <p>P = (cos a, sin a)</p>
           </div>
 
           <div className="unit-circle-period">
-            <span>Këndi i normalizuar</span>
-            <strong>{normalizedAngle}°</strong>
+            <span>KÃ«ndi i normalizuar</span>
+            <strong>{normalizedAngle}Â°</strong>
           </div>
         </div>
       </section>
